@@ -1,11 +1,67 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop_mr1">#ffffff</item>
+
+        <item name="android:fontFamily">@font/abhaya_libre</item>
+
+        <item name="colorOnPrimary">@color/primary_text</item>
+        <item name="colorOnSecondary">@color/secondary_text</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="materialCardViewStyle">@style/AppCard</item>
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <item name="materialButtonStyle">@style/AppButton</item>
+        <item name="materialButtonOutlinedStyle">@style/AppOutlineButton</item>
+    </style>
+
+    <style name="AppCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/colorWhite2</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/colorWhite</item>
+        <item name="boxStrokeColor">@color/secondary_text</item>
+        <item name="hintTextAppearance">@style/AppTextHint</item>
+        <item name="hintTextColor">@color/secondary_text</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_color_grey</item>
+    </style>
+
+    <style name="AppTextHint" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="AppShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="AppShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="strokeColor">@color/primaryColor</item>
+    </style>
+
+    <style name="AppButtonText" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colorAccent</item>
     </style>
 
 </resources>
