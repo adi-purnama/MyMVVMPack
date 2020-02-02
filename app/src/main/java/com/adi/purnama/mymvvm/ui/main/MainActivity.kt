@@ -1,4 +1,4 @@
-package com.adi.purnama.mymvvm.ui
+package com.adi.purnama.mymvvm.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
